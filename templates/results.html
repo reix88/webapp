@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2> {{ the_title }}</h2>
+<p>You submitted the followind data: </p>
+<table>
+	<tr><td>Word:</td><td>{{ the_word }}</td></tr>
+	<tr><td>Letters:</td><td>{{ the_letters }}</td></tr>
+</table>
+<p>When "{{ the_word }}" is search for "{{ the_letters }}", the followind results are returned:</p>
+<h3>{{ the_results }}</h3>
+
+{% endblock %}
